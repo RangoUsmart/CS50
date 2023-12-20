@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
     }
 
     string name = get_string("Give me a string?\n");
-    
-    printf("Hello, %s!\n your key is %s\n ", name, argv[1]);
+    for(int i; name[i]!='\0'; i++)
+        printf("%s__%d", name[i], name[i]);
     return 0;
 }
