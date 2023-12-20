@@ -21,10 +21,10 @@ int main(int argc, char *argv[]) {
         if(islower(input[i])){
 
         }
-        if(islower(input[i])){
+        if(isupper(input[i])){
 
         }
-        if(islower(input[i])){
+        if(isspace(input[i])){
 
         }
 
