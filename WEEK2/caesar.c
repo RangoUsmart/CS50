@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
 
     for(int i=0; input[i]!='\0'; i++){
         if(islower(input[i])){
-
+            for()
         }
         if(isupper(input[i])){
 
@@ -36,5 +36,6 @@ int main(int argc, char *argv[]) {
         // printf("%c__%c \n",test3, test4);
         // printf("%d__%d \n",test3, test4);
     }
+    printf("ciphertext: \n", argv[0]);
     return 0;
 }
