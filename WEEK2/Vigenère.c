@@ -10,6 +10,7 @@ int main(int argc, char *argv[]) {
         printf("Usage: %s <integer>\n", argv[0]);
         return 1;
     }
+    else if()
     int shift = atoi(argv[1]);
     string input = get_string("Give me a string:");
     int length = strlen(input);
