@@ -8,6 +8,8 @@ void typeofarg(char *argv[]){
     for(int i=0; argv[i]!='\0'; i++){
         if(input[i]<='z'&&input[i]>='a'||input[i]<='Z'&&input[i]>='A'){
             output[i]='a'+(input[i]-'a'+shift)%26;
+        }else{
+            
         }
     }
 }
