@@ -17,11 +17,11 @@ int typeofarg(char string[]) {
 }
 
 int main(int argc, char *argv[]) {
-
     string input = get_string("Give me a string:");
     typeofarg(input);
     int length = strlen(input);
     char output[length + 1];
+    
     printf("ciphertext: %s\n", output);
     return 0;
 }
