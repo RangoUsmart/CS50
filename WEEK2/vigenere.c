@@ -19,7 +19,11 @@ int typeofarg(char string[]) {
 
 int main(int argc, char *argv[]) {
     string input = get_string("Give me a string:");
-    typeofarg(input);
+    if (argc != 2) {
+        printf("Usage: ./vigenere keyword\n");
+        return 1;
+    }
+    typeofarg(argv[1]);
     
     int length = strlen(input);
     char output[length + 1];
