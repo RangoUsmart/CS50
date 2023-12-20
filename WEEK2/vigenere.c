@@ -9,7 +9,7 @@ int typeofarg(char string[]) {
         if ((string[i] <= 'z' && string[i] >= 'a') || (string[i] <= 'Z' && string[i] >= 'A')) {
             continue; // Продовжити перевірку наступного символу у рядку
         } else {
-            printf("Usage: <integer>\n");
+            printf("Usage: ./vigenere keyword\n");
             return 1;
         }
     }
