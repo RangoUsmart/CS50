@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
         }
         else if(input[i]<='Z'&&input[i]>='A'){
             output[i]=input[i]+shift;
-            output[i]='A'+('A'-input[i]+shift)%26;
+            output[i]='A'+(input[i]-'A'+shift)%26;
         }
         else{
             output[i]=input[i];
