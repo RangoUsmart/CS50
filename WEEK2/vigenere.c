@@ -33,14 +33,15 @@ int main(int argc, char *argv[]) {
 
     int length = strlen(input);
     char output[length + 1];
-    int key[length]
+    int key[length];
 
     for(int i=0; input[i]!='\0'; i++){
-        key[i]=getkey(argv[1][i])
-        // printf("%d\n",getkey(input[i]));
+        key[i]=getkey(argv[1][i]);
+        // printf("%d \n",getkey(input[i]));
         }
     }
 
+    printf("_%d \n", key);
 
 
 
