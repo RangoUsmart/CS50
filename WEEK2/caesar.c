@@ -27,7 +27,9 @@ int main(int argc, char *argv[]) {
         if(isspace(input[i])){
 
         }
-
+        else{
+            output[i]=input[i]
+        }
         // printf("%c__%d \n", name[i], name[i]);
         // printf("%c__%c \n",test1, test2);
         // printf("%d__%d \n",test1, test2);
