@@ -26,7 +26,7 @@ int main(int argc, char *argv[]) {
             // printf("%d \n", input[i]);
             // printf("%d \n", shift);
             output[i]=input[i]+shift;
-            // printf("%d \n", output[i]);
+            printf("%d \n", output[i]);
             if(output[i]>'z'){
                 output[i]='a'+output[i]-'z'-1;
             }
@@ -35,7 +35,7 @@ int main(int argc, char *argv[]) {
             // printf("%d \n", input[i]);
             // printf("%d \n", shift);
             output[i]=input[i]+shift;
-            // printf("%d \n", output[i]);
+            printf("%d \n", output[i]);
             if(output[i]>'Z'){
                 output[i]='A'+output[i]-'Z'-1;
             }
