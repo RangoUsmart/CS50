@@ -2,6 +2,7 @@
 #include <cs50.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 
 int main(int argc, char *argv[]) {
 
@@ -14,22 +15,22 @@ int main(int argc, char *argv[]) {
     // char test3='a';
     // char test4='z';
 
-    string input = get_string"Give me a string\n");
+    string input = get_string("Give me a string\n");
     int length = strlen(input);
     char output[length + 1];
 
     for(int i=0; input[i]!='\0'; i++){
         if(islower(input[i])){
-            output[i]=input[i]
+            output[i]=input[i];
         }
         if(isupper(input[i])){
-            output[i]=input[i]
+            output[i]=input[i];
         }
         if(isspace(input[i])){
-            output[i]=input[i]
+            output[i]=input[i];
         }
         else{
-            output[i]=input[i]
+            output[i]=input[i];
         }
         // printf("%c__%d \n", name[i], name[i]);
         // printf("%c__%c \n",test1, test2);
