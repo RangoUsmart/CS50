@@ -22,14 +22,14 @@ int main(int argc, char *argv[]) {
     for(int i=0; input[i]!='\0'; i++){
         if(islower(input[i])){
 
-            output[i]=char(input[i]+argv[1]);
+            output[i]=char(input[i]+int(argv[1]));
             if(output[i]>'z'){
                output[i]=char('a'+output[i]-'z')
             }
 
         }
         if(isupper(input[i])){
-            output[i]=char(input[i]+argv[1]);
+            output[i]=char(input[i]+int(argv[1]));
             if(output[i]>'Z'){
                output[i]=char('A'+output[i]-'A')
             }
