@@ -28,6 +28,6 @@ int main(int argc, char *argv[]) {
         }
     }
     output[length] = '\0';
-    printf("ciphertext: %s \n", output);
+    printf("ciphertext: %s\n", output);
     return 0;
 }
