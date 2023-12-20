@@ -5,16 +5,15 @@
 #include <ctype.h>
 
 int typeofarg(char string[]) {
-    for (int i = 1; argv[i] != NULL; i++) { // Починаємо з індексу 1, бо argv[0] - це назва програми
-
-            if ((argv[i][j] <= 'z' && argv[i][j] >= 'a') || (argv[i][j] <= 'Z' && argv[i][j] >= 'A')) {
-                continue; // Продовжити перевірку наступного символу у цьому аргументі
-            } else {
-                printf("Usage: %s <integer>\n", argv[0]);
-                return 1;
-            }
+    for (int i = 0; string[i] != '\0'; i++) {
+        if ((string[i] <= 'z' && string[i] >= 'a') || (string[i] <= 'Z' && string[i] >= 'A')) {
+            continue; // Продовжити перевірку наступного символу у рядку
+        } else {
+            printf("Usage: <integer>\n");
+            return 1;
+        }
     }
-    return 0; // Якщо всі символи у всіх аргументах - це букви, повертаємо 0
+    return 0; // Якщо всі символи у рядку - це букви, повертаємо 0
 }
 
 int main(int argc, char *argv[]) {
