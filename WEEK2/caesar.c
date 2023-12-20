@@ -7,17 +7,19 @@ int main(int argc, char *argv[]) {
         printf("Usage: %s <integer>\n", argv[0]);
         return 1;
     }
-    char test1="A";
-    char test2="Z";
-    char test3="a";
-    char test4="z";
-    
+    char test1='A';
+    char test2='Z';
+    char test3='a';
+    char test4='z';
+
     string name = get_string("Give me a string?\n");
-    for(int i=0; name[i]!='\0'; i++)
+
+    for(int i=0; name[i]!='\0'; i++){
         printf("%c__%d \n", name[i], name[i]);
         printf("%c__%c \n",test1, test2);
         printf("%d__%d \n",test1, test2);
         printf("%c__%c \n",test3, test4);
         printf("%d__%d \n",test3, test4);
+    }
     return 0;
 }
