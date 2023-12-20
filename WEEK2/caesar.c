@@ -49,6 +49,7 @@ int main(int argc, char *argv[]) {
         // printf("%c__%c \n",test3, test4);
         // printf("%d__%d \n",test3, test4);
     }
+    output[length] = '\0';
     printf("ciphertext: %s \n", output);
     return 0;
 }
