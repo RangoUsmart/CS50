@@ -17,7 +17,7 @@ int typeofarg(char string[]) {
 }
 
 int getkey(char onechar) {
-    return onechar - 'a' + 1;
+    return onechar - 'a';
 }
 
 int main(int argc, char *argv[]) {
