@@ -25,7 +25,7 @@ int main(int argc, char *argv[]) {
         if(input[i]<='z'&&input[i]>='a'){
             printf("%d \n", input[i]);
             // printf("%d \n", shift);
-            output[i]=input[i]+shift;
+            output[i]=(input[i]+shift)%26;
             printf("%d \n", output[i]);
             if(output[i]>'z'){
                 // printf("%d \n", output[i]);
