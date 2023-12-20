@@ -39,7 +39,7 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    int key =[]
+    int key[length]
 
 
     // for(int i=0; input[i]!='\0'; i++){
