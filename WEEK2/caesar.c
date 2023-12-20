@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
     char output[length + 1];
 
     for(int i=0; input[i]!='\0'; i++){
-        if(input[i]<=z&&input[i]>=a){
+        if(input[i]<='z'&&input[i]>='a'){
             printf("%d \n", input[i]);
             printf("%d \n", shift);
             output[i]=input[i]+shift;
