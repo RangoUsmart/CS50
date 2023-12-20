@@ -23,11 +23,16 @@ int main(int argc, char *argv[]) {
         if(islower(input[i])){
 
             output[i]=input[i]+argv[1];
-            if(output[i])
+            if(output[i]>'z'){
+               output[i]='a'+output[i]-'z'
+            }
 
         }
         if(isupper(input[i])){
             output[i]=input[i];
+            if(output[i]>'Z'){
+               output[i]='A'+output[i]-'A'
+            }
         }
         if(isspace(input[i])){
             output[i]=input[i];
