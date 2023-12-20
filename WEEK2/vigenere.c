@@ -18,15 +18,20 @@ int typeofarg(char string[]) {
 }
 
 int main(int argc, char *argv[]) {
+
     string input = get_string("Give me a string:");
+
     if (argc != 2) {
         printf("Usage: ./vigenere keyword\n");
         return 1;
     }
+
     typeofarg(argv[1]);
-    
+
     int length = strlen(input);
     char output[length + 1];
+
+    
 
     for(int i=0; input[i]!='\0'; i++){
         if(input[i]<='z'&&input[i]>='a'){
