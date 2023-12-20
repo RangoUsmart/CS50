@@ -31,7 +31,7 @@ int main(int argc, char *argv[]) {
                 output[i]='a'+output[i]-'z'-1;
             }
         }
-        if(input[i]<='Z'&&input[i]>='A'){
+        else if(input[i]<='Z'&&input[i]>='A'){
             // printf("%d \n", input[i]);
             // printf("%d \n", shift);
             output[i]=input[i]+shift;
