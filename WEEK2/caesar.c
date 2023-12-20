@@ -19,13 +19,13 @@ int main(int argc, char *argv[]) {
 
     for(int i=0; input[i]!='\0'; i++){
         if(islower(input[i])){
-            for()
+            output[i]=input[i]
         }
         if(isupper(input[i])){
-
+            output[i]=input[i]
         }
         if(isspace(input[i])){
-
+            output[i]=input[i]
         }
         else{
             output[i]=input[i]
