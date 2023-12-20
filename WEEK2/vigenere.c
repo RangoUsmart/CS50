@@ -17,8 +17,7 @@ int typeofarg(char string[]) {
     return 0;
 }
 
-int typeofarg(char string[]) {
-    count
+int getkey(char onechar) {
     for (int i = 0; string[i] != '\0'; i++) {
         if ((string[i] <= 'z' && string[i] >= 'a') || (string[i] <= 'Z' && string[i] >= 'A')) {
             continue;
