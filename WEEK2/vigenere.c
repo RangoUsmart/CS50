@@ -18,15 +18,7 @@ int typeofarg(char string[]) {
 }
 
 int getkey(char onechar) {
-    for (int i = 0; string[i] != '\0'; i++) {
-        if ((string[i] <= 'z' && string[i] >= 'a') || (string[i] <= 'Z' && string[i] >= 'A')) {
-            continue;
-        } else {
-            printf("Usage: ./vigenere keyword\n");
-            return 1;
-        }
-    }
-    return 0;
+    return onechar - 'a' + 1;
 }
 
 int main(int argc, char *argv[]) {
