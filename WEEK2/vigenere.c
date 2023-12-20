@@ -4,7 +4,7 @@
 #include <string.h>
 #include <ctype.h>
 
-void typeofarg(char *argv[]){
+int typeofarg(char *argv[]){
     for(int i=0; argv[i]!='\0'; i++){
         if(input[i]<='z'&&input[i]>='a'||input[i]<='Z'&&input[i]>='A'){
              return 0;
