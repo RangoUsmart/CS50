@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
 
     for(int i=0; input[i]!='\0'; i++){
         if(input[i]<='z'&&input[i]>='a'){
-            output[i]='a'+('a'-input[i]+shift)%26;
+            output[i]='a'+(input[i]-'a'+shift)%26;
         }
         else if(input[i]<='Z'&&input[i]>='A'){
             output[i]=input[i]+shift;
