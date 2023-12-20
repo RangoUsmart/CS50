@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
     // char test3='a';
     // char test4='z';
 
-    string input = get_string("Give me a string\n");
+    string input = get_string("Give me a string: ");
     int length = strlen(input);
     char output[length + 1];
 
