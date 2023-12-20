@@ -17,6 +17,19 @@ int typeofarg(char string[]) {
     return 0;
 }
 
+int typeofarg(char string[]) {
+    count
+    for (int i = 0; string[i] != '\0'; i++) {
+        if ((string[i] <= 'z' && string[i] >= 'a') || (string[i] <= 'Z' && string[i] >= 'A')) {
+            continue;
+        } else {
+            printf("Usage: ./vigenere keyword\n");
+            return 1;
+        }
+    }
+    return 0;
+}
+
 int main(int argc, char *argv[]) {
 
     string input = get_string("Give me a string:");
@@ -30,8 +43,8 @@ int main(int argc, char *argv[]) {
 
     int length = strlen(input);
     char output[length + 1];
+    int key
 
-    
 
     for(int i=0; input[i]!='\0'; i++){
         if(input[i]<='z'&&input[i]>='a'){
