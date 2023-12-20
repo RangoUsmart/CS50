@@ -5,7 +5,6 @@
 #include <ctype.h>
 
 int typeofarg(char string[]) {
-    count
     for (int i = 0; string[i] != '\0'; i++) {
         if ((string[i] <= 'z' && string[i] >= 'a') || (string[i] <= 'Z' && string[i] >= 'A')) {
             continue;
@@ -34,22 +33,28 @@ int main(int argc, char *argv[]) {
 
     int length = strlen(input);
     char output[length + 1];
-    int key
-
 
     for(int i=0; input[i]!='\0'; i++){
-        if(input[i]<='z'&&input[i]>='a'){
-            output[i]='a'+(input[i]-'a'+shift)%26;
-        }
-        else if(input[i]<='Z'&&input[i]>='A'){
-            output[i]=input[i]+shift;
-            output[i]='A'+(input[i]-'A'+shift)%26;
-        }
-        else{
-            output[i]=input[i];
+        printf("%d\n",getkey(input[i]));
         }
     }
-    output[length] = '\0';
-    printf("ciphertext: %s\n", output);
-    return 0;
-}
+
+    // int key
+
+
+    // for(int i=0; input[i]!='\0'; i++){
+    //     if(input[i]<='z'&&input[i]>='a'){
+    //         output[i]='a'+(input[i]-'a'+shift)%26;
+    //     }
+    //     else if(input[i]<='Z'&&input[i]>='A'){
+    //         output[i]=input[i]+shift;
+    //         output[i]='A'+(input[i]-'A'+shift)%26;
+    //     }
+    //     else{
+    //         output[i]=input[i];
+    //     }
+    // }
+    // output[length] = '\0';
+    // printf("ciphertext: %s\n", output);
+    // return 0;
+// }
