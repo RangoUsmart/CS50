@@ -22,12 +22,14 @@ int main(int argc, char *argv[]) {
     char output[length + 1];
 
     for(int i=0; input[i]!='\0'; i++){
-        printf("%d \n", input[i]);
-        printf("%d \n", shift);
-        output[i]=input[i]+shift;
-        printf("%d \n", output[i]);
-        if(output[i]>'z'){
-            output[i]='a'+output[i]-'z'-1;
+        if(input[i]<=z&&input[i]>=a){
+            printf("%d \n", input[i]);
+            printf("%d \n", shift);
+            output[i]=input[i]+shift;
+            printf("%d \n", output[i]);
+            if(output[i]>'z'){
+                output[i]='a'+output[i]-'z'-1;
+            }
         }
         // else{
         //     output[i]=input[i];
