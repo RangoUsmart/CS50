@@ -22,6 +22,19 @@ int main(int argc, char *argv[]) {
     int length = strlen(input);
     char output[length + 1];
     
+    for(int i=0; input[i]!='\0'; i++){
+        if(input[i]<='z'&&input[i]>='a'){
+            output[i]='a'+(input[i]-'a'+shift)%26;
+        }
+        else if(input[i]<='Z'&&input[i]>='A'){
+            output[i]=input[i]+shift;
+            output[i]='A'+(input[i]-'A'+shift)%26;
+        }
+        else{
+            output[i]=input[i];
+        }
+    }
+    output[length] = '\0';
     printf("ciphertext: %s\n", output);
     return 0;
 }
