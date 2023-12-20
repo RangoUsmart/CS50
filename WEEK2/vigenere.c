@@ -39,10 +39,12 @@ int main(int argc, char *argv[]) {
         key[i]=getkey(argv[1][i]);
         // printf("%d \n",getkey(input[i]));
         }
+    
+
+    for (int i = 0; i < length; i++) {
+        printf("_%d ", key[i]);
     }
-
-    printf("_%d \n", key);
-
+}
 
 
     // for(int i=0; input[i]!='\0'; i++){
