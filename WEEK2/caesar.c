@@ -27,10 +27,10 @@ int main(int argc, char *argv[]) {
             // printf("%d \n", shift);
             output[i]=(input[i]+shift)%26;
             printf("%d \n", output[i]);
-            if(output[i]>'z'){
-                // printf("%d \n", output[i]);
-                output[i]='a'+output[i]-'z'-1;
-            }
+            // if(output[i]>'z'){
+            //     // printf("%d \n", output[i]);
+            //     output[i]='a'+output[i]-'z'-1;
+            // }
         }
         else if(input[i]<='Z'&&input[i]>='A'){
             // printf("%d \n", input[i]);
