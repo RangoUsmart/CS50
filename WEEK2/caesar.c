@@ -18,7 +18,7 @@ int main(int argc, char *argv[]) {
     char output[length + 1];
 
     for(int i=0; input[i]!='\0'; i++){
-
+        if(input[i]==)
         // printf("%c__%d \n", name[i], name[i]);
         // printf("%c__%c \n",test1, test2);
         // printf("%d__%d \n",test1, test2);
