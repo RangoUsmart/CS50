@@ -5,23 +5,25 @@
 #include <ctype.h>
 
 int typeofarg(char string[]) {
+    count
     for (int i = 0; string[i] != '\0'; i++) {
         if ((string[i] <= 'z' && string[i] >= 'a') || (string[i] <= 'Z' && string[i] >= 'A')) {
-            continue; // Продовжити перевірку наступного символу у рядку
+            continue;
         } else {
             printf("Usage: ./vigenere keyword\n");
             return 1;
         }
     }
-    return 0; // Якщо всі символи у рядку - це букви, повертаємо 0
+    return 0;
 }
 
 int main(int argc, char *argv[]) {
     string input = get_string("Give me a string:");
     typeofarg(input);
+    
     int length = strlen(input);
     char output[length + 1];
-    
+
     for(int i=0; input[i]!='\0'; i++){
         if(input[i]<='z'&&input[i]>='a'){
             output[i]='a'+(input[i]-'a'+shift)%26;
