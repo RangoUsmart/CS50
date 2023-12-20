@@ -10,6 +10,8 @@ int main(int argc, char *argv[]) {
         printf("Usage: %s <integer>\n", argv[0]);
         return 1;
     }
+    int shift = atoi(argv[1]); // Конвертація рядка у число
+
     // char test1='A';
     // char test2='Z';
     // char test3='a';
@@ -21,17 +23,16 @@ int main(int argc, char *argv[]) {
 
     for(int i=0; input[i]!='\0'; i++){
         if(islower(input[i])){
-
-            output[i]=input[i]+argv[1];
+            output[i]=input[i]+shift;
             if(output[i]>'z'){
-               output[i]=char('a'+output[i]-'z')
+               output[i]='a'+output[i]-'z';
             }
 
         }
         if(isupper(input[i])){
-            output[i]=char(input[i]+int(argv[1]));
+            output[i]=input[i]+shift;
             if(output[i]>'Z'){
-               output[i]=char('A'+output[i]-'A')
+               output[i]='A'+output[i]-'A';
             }
         }
         if(isspace(input[i])){
