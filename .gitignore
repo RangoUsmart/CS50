@@ -1,3 +1,5 @@
 notebook
 *.code-workspace
 *.ini
+/.vscode
+/notebook
