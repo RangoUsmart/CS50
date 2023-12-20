@@ -23,6 +23,7 @@ int main(int argc, char *argv[]) {
         if(islower(input[i])){
 
             output[i]=input[i]+argv[1];
+            if(output[i])
 
         }
         if(isupper(input[i])){
