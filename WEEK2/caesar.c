@@ -23,17 +23,26 @@ int main(int argc, char *argv[]) {
 
     for(int i=0; input[i]!='\0'; i++){
         if(input[i]<='z'&&input[i]>='a'){
-            printf("%d \n", input[i]);
-            printf("%d \n", shift);
+            // printf("%d \n", input[i]);
+            // printf("%d \n", shift);
             output[i]=input[i]+shift;
-            printf("%d \n", output[i]);
+            // printf("%d \n", output[i]);
             if(output[i]>'z'){
                 output[i]='a'+output[i]-'z'-1;
             }
         }
-        // else{
-        //     output[i]=input[i];
-        // }
+        if(input[i]<='Z'&&input[i]>='A'){
+            // printf("%d \n", input[i]);
+            // printf("%d \n", shift);
+            output[i]=input[i]+shift;
+            // printf("%d \n", output[i]);
+            if(output[i]>'Z'){
+                output[i]='A'+output[i]-'Z'-1;
+            }
+        }
+        else{
+            output[i]=input[i];
+        }
         // printf("%c__%d \n", name[i], name[i]);
         // printf("%c__%c \n",test1, test2);
         // printf("%d__%d \n",test1, test2);
