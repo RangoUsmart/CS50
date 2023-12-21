@@ -42,7 +42,6 @@ int main(int argc, char *argv[]) {
         // printf("%d \n",getkey(input[i]));
         }
 
-
     for (int i = 0; i < length; i++) {
         printf("_%d ", key[i]);
     }
