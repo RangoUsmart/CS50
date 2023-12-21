@@ -30,7 +30,9 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-     printf("_%s\n", string[i]);
+    // typeofarg(argv[1]);
+    
+    printf("_%c\n", argv[1]);
 
 
     int length = strlen(input);
