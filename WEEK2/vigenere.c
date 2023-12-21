@@ -18,6 +18,16 @@ int typeofarg(char string[]) {
 return 0;
 }
 
+int calculateLength(string input) {
+    int count = 0;
+    for (int i = 0; input[i] != '\0'; i++) {
+        if (input[i] != ' ' && !ispunct(input[i])) {
+            count++;
+        }
+    }
+    return count;
+}
+
 int getkey(char onechar) {
     if (isupper(onechar)) {
         return onechar - 'A';
@@ -37,7 +47,7 @@ int main(int argc, char *argv[]) {
 
     string input = get_string("Give me a string:");
 
-    int length = strlen(input);
+    int length = calculateLength(input);
     int key_length = strlen(argv[1]);
     char output[length + 1];
 
