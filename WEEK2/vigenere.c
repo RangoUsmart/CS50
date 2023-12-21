@@ -47,8 +47,6 @@ int main(int argc, char *argv[]) {
         printf("_%d ", key[i]);
     }
 
-
-
     for(int i=0; input[i]!='\0'; i++){
         if(input[i]<='z'&&input[i]>='a'){
             output[i]='a'+(input[i]-'a'+shift)%26;
