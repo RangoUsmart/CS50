@@ -57,7 +57,7 @@ int main(int argc, char *argv[]) {
     //     printf("_%s\n", argv[1]);
     // }   calculateLength
 
-    for(int i=0; input[i]!='\0'; i++){
+    for(int i=0; i<calculateLength(input); i++){
         key[i]=getkey(argv[1][i%key_length]);
         // printf("%d \n",getkey(input[i]));
         }
