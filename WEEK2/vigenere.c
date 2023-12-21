@@ -38,7 +38,7 @@ int main(int argc, char *argv[]) {
     int key[length];
 
     for(int i=0; input[i]!='\0'; i++){
-        key[i]=getkey(argv[1][i]);
+        key[i]=getkey(argv[1][i%key_length]);
         // printf("%d \n",getkey(input[i]));
         }
 
