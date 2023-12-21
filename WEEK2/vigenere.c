@@ -13,6 +13,7 @@ int typeofarg(char string[]) {
             printf("Usage: ./vigenere keyword\n");
             return 1;
         }
+
     }
 return 0;
 }
