@@ -8,10 +8,8 @@ void typeofarg(char string[]) {
     for (int i = 0; string[i] != '\0'; i++) {
         if ((string[i] >= 'a' && string[i] <= 'z') || (string[i] >= 'A' && string[i] <= 'Z')) {
             printf("_%c\n", string[i]);
-            return 0;
         } else {
             printf("Usage: ./vigenere keyword\n");
-            return 1;
         }
     }
 }
