@@ -10,10 +10,10 @@ int typeofarg(char string[]) {
             printf("_%c\n", string[i]);
         } else {
             printf("Usage: ./vigenere keyword\n");
-            return 1; // Повертаємо 1, оскільки знайдено символ, який не є літерою
+            return 1;
         }
     }
-    return 0; // Повертаємо 0, якщо всі символи - літери
+    return 0; 
 }
 
 int getkey(char onechar) {
@@ -28,6 +28,8 @@ int getkey(char onechar) {
 
 int main(int argc, char *argv[]) {
 
+    typeofarg(argv[1]);
+
     string input = get_string("Give me a string:");
 
     if (argc != 2) {
@@ -35,7 +37,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    typeofarg(argv[1]);
+
 
 
     int length = strlen(input);
