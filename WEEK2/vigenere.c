@@ -30,7 +30,8 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    typeofarg(argv[1]);
+     printf("_%s\n", string[i]);
+
 
     int length = strlen(input);
     int key_length = strlen(argv[1]);
