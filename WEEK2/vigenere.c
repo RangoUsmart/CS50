@@ -4,18 +4,18 @@
 #include <string.h>
 #include <ctype.h>
 
-int typeofarg(char string[]) {
-    for (int i = 0; string[i] != '\0'; i++) {
-        if ((string[i] <= 'z' && string[i] >= 'a') || (string[i] <= 'Z' && string[i] >= 'A')) {
-            printf("_%s\n", string[i]);
-            continue;
-        } else {
-            printf("Usage: ./vigenere keyword\n");
-            return 0;
-        }
-    }
-    return 0;
-}
+// int typeofarg(char string[]) {
+//     for (int i = 0; string[i] != '\0'; i++) {
+//         if ((string[i] <= 'z' && string[i] >= 'a') || (string[i] <= 'Z' && string[i] >= 'A')) {
+//             printf("_%s\n", string[i]);
+//             continue;
+//         } else {
+//             printf("Usage: ./vigenere keyword\n");
+//             return 0;
+//         }
+//     }
+//     return 0;
+// }
 
 int getkey(char onechar) {
     return onechar - 'a';
@@ -31,8 +31,6 @@ int main(int argc, char *argv[]) {
     }
 
     // typeofarg(argv[1]);
-    
-    printf("_%c\n", argv[1]);
 
 
     int length = strlen(input);
@@ -40,6 +38,10 @@ int main(int argc, char *argv[]) {
     char output[length + 1];
 
     int key[length];
+
+    //  for (int i = 0; i<key_length; i++) {
+    //     printf("_%s\n", argv[1]);
+    // }
 
     for(int i=0; input[i]!='\0'; i++){
         key[i]=getkey(argv[1][i%key_length]);
