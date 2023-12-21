@@ -7,10 +7,10 @@
 int typeofarg(char string[]) {
     for (int i = 0; string[i] != '\0'; i++) {
         if ((string[i] >= 'a' && string[i] <= 'z') || (string[i] >= 'A' && string[i] <= 'Z')) {
-            printf("_%c\n", string[i]);
+            // printf("_%c\n", string[i]);
 
         } else {
-            printf("Usage: ./vigenere keyword\n");
+            // printf("Usage: ./vigenere keyword\n");
             return 1;
         }
 
@@ -30,14 +30,14 @@ int getkey(char onechar) {
 
 int main(int argc, char *argv[]) {
 
-    typeofarg(argv[1]);
-
-    string input = get_string("Give me a string:");
-
     if (argc != 2|| typeofarg(argv[1])) {
         printf("Usage: ./vigenere keyword\n");
         return 1;
     }
+
+    string input = get_string("Give me a string:");
+
+
 
 
 
