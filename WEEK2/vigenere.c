@@ -17,7 +17,13 @@ int typeofarg(char string[]) {
 }
 
 int getkey(char onechar) {
-    return onechar - 'a';
+    if (isupper(onechar)) {
+        return onechar - 'A';
+    } else if (islower(onechar)) {
+        return onechar - 'a';
+    } else {
+        return 0;
+    }
 }
 
 int main(int argc, char *argv[]) {
