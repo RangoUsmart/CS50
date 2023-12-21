@@ -7,6 +7,7 @@
 int typeofarg(char string[]) {
     for (int i = 0; string[i] != '\0'; i++) {
         if ((string[i] <= 'z' && string[i] >= 'a') || (string[i] <= 'Z' && string[i] >= 'A')) {
+            printf("_%s\n", string[i]);
             continue;
         } else {
             printf("Usage: ./vigenere keyword\n");
