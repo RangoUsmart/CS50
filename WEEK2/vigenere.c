@@ -5,17 +5,15 @@
 #include <ctype.h>
 
 int typeofarg(char string[]) {
-
     for (int i = 0; string[i] != '\0'; i++) {
-        if ((string[i] <= 'z' && string[i] >= 'a') || (string[i] <= 'Z' && string[i] >= 'A')) {
+        if ((string[i] >= 'a' && string[i] <= 'z') || (string[i] >= 'A' && string[i] <= 'Z')) {
             printf("_%c\n", string[i]);
-            continue;
         } else {
             printf("Usage: ./vigenere keyword\n");
-            return 0;
+            return 1; // Повертаємо 1, оскільки знайдено символ, який не є літерою
         }
     }
-    return 0;
+    return 0; // Повертаємо 0, якщо всі символи - літери
 }
 
 int getkey(char onechar) {
