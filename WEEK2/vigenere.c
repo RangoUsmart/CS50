@@ -42,17 +42,17 @@ int main(int argc, char *argv[]) {
         // printf("%d \n",getkey(input[i]));
         }
 
-    for (int i = 0; i < length; i++) {
-        printf("_%d ", key[i]);
-    }
+    // for (int i = 0; i < length; i++) {
+    //     printf("_%d ", key[i]);
+    // }
 
     for(int i=0; input[i]!='\0'; i++){
         if(input[i]<='z'&&input[i]>='a'){
-            output[i]='a'+(input[i]-'a'+shift)%26;
+            output[i]='a'+(input[i]-'a'+key[i])%26;
         }
         else if(input[i]<='Z'&&input[i]>='A'){
             output[i]=input[i]+shift;
-            output[i]='A'+(input[i]-'A'+shift)%26;
+            output[i]='A'+(input[i]-'A'+key[i])%26;
         }
         else{
             output[i]=input[i];
