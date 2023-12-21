@@ -32,7 +32,9 @@ int main(int argc, char *argv[]) {
     typeofarg(argv[1]);
 
     int length = strlen(input);
+    int key_length = strlen(argv[1]);
     char output[length + 1];
+
     int key[length];
 
     for(int i=0; input[i]!='\0'; i++){
