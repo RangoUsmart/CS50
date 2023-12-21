@@ -10,7 +10,7 @@ int typeofarg(char string[]) {
             continue;
         } else {
             printf("Usage: ./vigenere keyword\n");
-            return 1;
+            return 0;
         }
     }
     return 0;
