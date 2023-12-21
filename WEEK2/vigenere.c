@@ -37,11 +37,6 @@ int main(int argc, char *argv[]) {
 
     string input = get_string("Give me a string:");
 
-
-
-
-
-
     int length = strlen(input);
     int key_length = strlen(argv[1]);
     char output[length + 1];
