@@ -47,7 +47,7 @@ int main(int argc, char *argv[]) {
 
     string input = get_string("Give me a string:");
 
-    int length = calculateLength(input);
+    int length = strlen(input);
     int key_length = strlen(argv[1]);
     char output[length + 1];
 
@@ -62,9 +62,9 @@ int main(int argc, char *argv[]) {
         // printf("%d \n",getkey(input[i]));
         }
 
-    for (int i = 0; i < length; i++) {
-        printf("_%d ", key[i]);
-    }
+    // for (int i = 0; i < length; i++) {
+    //     printf("_%d ", key[i]);
+    // }
 
     for(int i=0; input[i]!='\0'; i++){
         if(input[i]<='z'&&input[i]>='a'){
