@@ -3,6 +3,7 @@
 #include <ctype.h>
 #include <stdbool.h>
 #include <stdio.h>
+#include <stdio.h>
 
 #include "dictionary.h"
 
@@ -83,14 +84,35 @@ bool load(const char *dictionary)
 // Returns number of words in dictionary if loaded else 0 if not yet loaded
 unsigned int size(void)
 {
-    // TODO
-    return 0;
+    unsigned int word_count = 0;
+    for (int i = 0; i < N; i++)
+    {
+        node *cursor = hashtable[i];
+        while (cursor != NULL)
+        {
+            word_count++;
+            cursor = cursor->next;
+        }
+    }
+
+    return word_count;
 }
 
 // Returns true if word is in dictionary else false
 bool check(const char *word)
 {
-    // TODO
+    unsigned int index = hash(word);
+
+    node *cursor = hashtable[index];
+    while (cursor != NULL)
+    {
+        if (strcmp(cursor->word, word) == 0)
+        {
+            return true;
+        }
+        cursor = cursor->next;
+    }
+
     return false;
 }
 
