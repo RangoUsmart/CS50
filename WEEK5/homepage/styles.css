@@ -29,4 +29,43 @@
 }
 
 /* Стилі для картки */
+/* Власні стилі */
+.card {
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 600px;
+  margin: 20px auto;
+}
 
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.left, .right {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar img {
+  width: 100%;
+}
+
+.details, .skills {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.skills ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.skills ul li {
+  margin-bottom: 5px;
+}
