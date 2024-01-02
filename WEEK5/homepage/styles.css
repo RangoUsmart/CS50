@@ -1,9 +1,4 @@
-/* Стилі для блоку зверху */
-.top-block {
-  height: 100px;
-  background-color: #333;
-  color: white;
-}
+
 
 /* Стилі для меню зверху */
 .top-menu {
@@ -18,4 +13,17 @@
   background-color: #f8f9fa;
   text-align: center;
   padding-top: 15px;
+}
+.top-block {
+  height: 100px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.duck-image {
+  height: 100px;
+  object-fit: cover;
 }
