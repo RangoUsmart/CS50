@@ -1,55 +1,73 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>CS50 Week 5</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-        <div class="top-block d-flex align-items-center justify-content-between">
-            <!-- Блок зверху -->
-            <img src="https://media.tenor.com/1YWH1QI9pVcAAAAi/utya-kaczka.gif" alt="Duck Image" class="duck-image">
-            <!-- Текст справа -->
-            <div class="text-right pr-4">
-                <p class="h3 text-white">CS50</p>
-            </div>
-        </div>
-
-        <div class="top-menu">
-            <!-- Меню зверху -->
-            <ul class="nav justify-content-center">
-                <!-- Ваше меню -->
-            </ul>
-        </div>
-
-        <div class="row mt-4">
-            <div class="col-md-6">
-                <!-- Блок ліворуч -->
-                <div class="card">
-                    <div class="left">
-                        <!-- Вміст лівого блоку -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <!-- Блок праворуч -->
-                <div class="card">
-                    <div class="right">
-                        <!-- Вміст правого блоку -->
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="bottom-menu">
-            <!-- Меню знизу -->
-            <p>Footer Menu</p>
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>CS50 Week 5</title>
+    </head>
+    <body>
+      <div class="top-block">
+        <!-- Блок зверху -->
+        <img src="https://media.tenor.com/1YWH1QI9pVcAAAAi/utya-kaczka.gif"
+            alt="Duck Image"
+            class="duck-image">
+        <!-- Текст справа -->
+        <div class="text-right pr-4">
+            <p class="h3 text-white">CS50</p>
         </div>
     </div>
 
+
+    <div class="top-menu">
+        <!-- Меню зверху -->
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Головна</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">Про мене</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="project.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Проекти
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Hello world</a>
+                  <a class="dropdown-item" href="#">Page 2</a>
+                  <a class="dropdown-item" href="#">Page 3</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="info.html">Довідка</a>
+            </li>
+        </ul>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-5">
+            <!-- Блок ліворуч -->
+            <div class="card">
+                <div class="left">
+                    <!-- Вміст лівого блоку -->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <!-- Блок праворуч -->
+            <div class="card">
+                <div class="right">
+                    <!-- Вміст правого блоку -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-menu">
+        <!-- Меню знизу -->
+        <p>Footer Menu</p>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
