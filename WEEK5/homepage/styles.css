@@ -1,20 +1,21 @@
-.navbar{
-    background:#F97300;
-   }
-   .nav-link , .navbar-brand{
-    color: #f4f4f4;
-    cursor: pointer;
-   }
-   .nav-link{
-    margin-right: 1em !important;
-   }
-   .nav-link:hover{
-    background: #f4f4f4;
-    color: #f97300;
-   }
-   .navbar-collapse{
-    justify-content: flex-end;
-   }
-   .navbar-toggler{
-     background:#fff !important;
-   }
+/* Стилі для блоку зверху */
+.top-block {
+  height: 100px;
+  background-color: #333;
+  color: white;
+}
+
+/* Стилі для меню зверху */
+.top-menu {
+  text-align: center;
+  padding-top: 15px;
+  background-color: #f8f9fa;
+}
+
+/* Стилі для меню знизу */
+.bottom-menu {
+  height: 50px;
+  background-color: #f8f9fa;
+  text-align: center;
+  padding-top: 15px;
+}
