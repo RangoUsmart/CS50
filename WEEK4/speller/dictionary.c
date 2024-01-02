@@ -102,12 +102,20 @@ unsigned int size(void)
 // Returns true if word is in dictionary else false
 bool check(const char *word)
 {
-    unsigned int index = hash(word);
+    // Convert the word to lowercase for case-insensitive comparison
+    char lowercase_word[LENGTH + 1];
+    for (int i = 0; word[i]; i++)
+    {
+        lowercase_word[i] = tolower(word[i]);
+    }
+    lowercase_word[strlen(word)] = '\0'; // Add the null terminator
+
+    unsigned int index = hash(lowercase_word); // Use the lowercase word for hashing
 
     node *cursor = hashtable[index];
     while (cursor != NULL)
     {
-        if (strcmp(cursor->word, word) == 0)
+        if (strcmp(cursor->word, lowercase_word) == 0)
         {
             return true;
         }
