@@ -49,6 +49,27 @@ bool load(const char *dictionary)
     // Insert words into hash table
     while (fscanf(file, "%s", word) != EOF)
     {
+        node *new_node = malloc(sizeof(node));
+        if (new_node == NULL)
+        {
+            fclose(file);
+            return false;
+        }
+
+        strcpy(new_node->word, word);
+        new_node->next = NULL;
+
+        unsigned int index = hash(word);
+
+        if (hashtable[index] == NULL)
+        {
+            hashtable[index] = new_node;
+        }
+        else
+        {
+            new_node->next = hashtable[index];
+            hashtable[index] = new_node;
+        }
         // TODO
     }
 
@@ -76,6 +97,15 @@ bool check(const char *word)
 // Unloads dictionary from memory, returning true if successful else false
 bool unload(void)
 {
-    // TODO
+    for (int i = 0; i < N; i++)
+    {
+        node *cursor = hashtable[i];
+        while (cursor != NULL)
+        {
+            node *temp = cursor;
+            cursor = cursor->next;
+            free(temp);
+        }
+    }
     return false;
 }
