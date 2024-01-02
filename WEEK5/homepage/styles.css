@@ -46,6 +46,8 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .avatar img {
@@ -54,10 +56,6 @@
 
 .details, .skills {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .skills ul {
