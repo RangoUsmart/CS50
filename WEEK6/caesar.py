@@ -11,12 +11,13 @@ def change(txt,arg1): #, par
         if (ord("a")<=ord(char)<=ord("z")):
             if(newchar>ord("z")):
                 newchar=newchar-ord("z")+ord("a")-1
+                diferent.append(newchar)
         elif (ord("A")<=ord(char)<=ord("Z")):
             if(newchar>ord("Z")):
                 newchar=newchar-ord("Z")+ord("A")-1
                 diferent.append(newchar)
         else:
-            diferent.append(ord(char))
+             diferent.append(newchar)
     text = ''.join(chr(code) for code in diferent)
     return text
 
