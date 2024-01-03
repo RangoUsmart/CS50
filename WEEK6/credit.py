@@ -19,6 +19,7 @@ while True:
                 print("____")
                 # break
                 print(i)
+            print(summ)
             param2=number[::-2]
             for i in param2:
                 summ=summ+int(i)
