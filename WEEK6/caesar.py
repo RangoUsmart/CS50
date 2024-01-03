@@ -23,7 +23,7 @@ def change(txt,arg1): #, par
         else:
              diferent.append(ord(char))
     text = ''.join(chr(code) for code in diferent)
-    text = text + "\n"
+    text = "ciphertext: "+text
     return text
 
 if __name__ == "__main__":
