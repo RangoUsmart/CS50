@@ -2,10 +2,10 @@
 import sys
 
 def getString():
-    inputtext=
+    inputtext=input("Введіть текст: ")
     return inputtext
 def change(txt, par)
-    
+
 if __name__ == "__main__":
     text=getString()
     arguments = sys.argv
