@@ -5,6 +5,7 @@ def getString():
     intext=input("Введіть текст: ")
     return intext
 def change(txt,arg1): #, par
+    
     diferent=[]
     for char in txt:
         newchar=ord(char)+int(arg1)%26
