@@ -1,12 +1,14 @@
-number = input("Введіть ціле число: ")
-if not number.isdigit():
-        break
-else
-    if 0<number<9:
-        for i in range(1, number+1):
-            form=number-i
-            row=(" "*form)+("#"*i)
-            print(row)
+while True:
+    number = input("Введіть ціле число: ")
+    if not number.isdigit():
+            break
     else:
-        break
+        
+        if 0<int(number)<9:
+            for i in range(1, int(number)+1):
+                form=(int(number)-i)
+                row=(" "*form)+("#"*i)
+                print(row)
+        else:
+            break
 
