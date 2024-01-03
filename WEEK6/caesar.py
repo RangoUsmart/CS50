@@ -1,46 +1,16 @@
-from cs50 import get_int
-digits = []
-while True:
-    try:
-        number = input("Введіть ціле число: ")
-        if (12 < len(number) < 17) :
-            summ=0
-            param1=number[-2::-2]
-            # print(param1)
-            for i in param1:
-                dub=int(i)*2
-                if dub>9:
-                    txt=str(dub)
-                    summ=summ+int(txt[0])+int(txt[1])
-                    # print(summ)
-                else:
-                    summ=summ+dub
-            param2=number[::-2]
-            for i in param2:
-                summ=summ+int(i)
-            # print(summ)
-            if summ%10==0:
-                # print(number[:1])
-                combinedNumber = int(number[:2])
-                if(combinedNumber==34 or combinedNumber==35 or combinedNumber==37):
+# from cs50 import get_int
+import sys
 
-                    print("AMEX\n")
-                    break
-                elif(int(number[:1])==4):
-                    print("VISA\n")
-                    break
-                elif(combinedNumber==54 or combinedNumber==55 or combinedNumber==51):
-                    print("MASTERCARD\n")
-                    break
-                else:
-                    print("INVALID")
-                    break
-            else:
-                print("INVALID")
+def getString():
+    inputtext=
 
+if __name__ == "__main__":
+    arguments = sys.argv
 
-        else:
-            print("INVALID")
-            break
-    except ValueError:
-        print("Ви ввели не ціле число. Спробуйте ще раз.")
+    # Перший аргумент (arguments[0]) - назва скрипта, тому перший аргумент зазвичай починається з індексу 1
+    # Виведення аргументів
+    print("Аргументи командного рядка:", arguments)
+
+    # Доступ до окремих аргументів
+    if len(arguments) > 1:
+        print("Перший аргумент:", arguments[1])
