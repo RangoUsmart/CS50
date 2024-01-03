@@ -27,7 +27,10 @@
   height: 100px;
   object-fit: cover;
 }
-
+.container {
+  width: 100%;
+  height: 100%;
+}
 /* Стилі для картки */
 /* styles.css */
 /* .card {
@@ -37,10 +40,7 @@
   border: 1px solid black;
 }
 
-.container {
-  width: 100%;
-  height: 100%;
-}
+
 
 .left {
   float: left;
