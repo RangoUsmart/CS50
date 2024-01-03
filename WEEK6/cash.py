@@ -12,5 +12,5 @@ while True :
 change=round(change*100)
 
 
-for i in cash):
-    print(i)
+for i in cash:
+   while
