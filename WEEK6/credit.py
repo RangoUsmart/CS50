@@ -1,5 +1,5 @@
 from cs50 import get_int
-
+digits = []
 while True:
     try:
         number = input("Введіть ціле число: ")
@@ -8,9 +8,11 @@ while True:
             param1=number[-2::-2]
             for i in param1:
                 dub=int(i)*2
-                if dub>9
-                    
-
+                if dub>9:
+                    while number > 0:
+                        digit = dub % 10
+                        digits.append(digit)
+                        dub //= 10
                 summ=summ+dub
                 print(int(i)*2)
                 # break
