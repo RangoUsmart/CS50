@@ -8,26 +8,20 @@ while True:
             param1=number[-2::-2]
             print(param1)
             for i in param1:
-                # print(i)
                 dub=int(i)*2
-                # print(dub)
                 if dub>9:
                     txt=str(dub)
-                    # print(txt)
                     summ=summ+int(txt[0])+int(txt[1])
                     print(summ)
                 else:
                     summ=summ+dub
-                    # print(dub)
-                print("____")
-                # break
-                # print(i)
-                print(summ)
             param2=number[::-2]
-            # for i in param2:
-            #     summ=summ+int(i)
+            for i in param2:
+                summ=summ+int(i)
 
-            # print(summ)
+            if summ%20:
+                
+
         else:
             print("Число не знаходиться у діапазоні від 13 до 16 включно.")
     except ValueError:
