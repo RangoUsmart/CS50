@@ -8,22 +8,21 @@ while True:
             param1=number[-2::-2]
             for i in param1:
                 dub=int(i)*2
-                print(dub)
+                # print(dub)
                 if dub>9:
                     while dub > 0:
                         digit = dub % 10
                         summ=summ+digit*2
-                        print(f"{digit} --")
-
+                        # print(f"{digit} --")
                         dub //= 10
                 else:
                     summ=summ+dub
 
-                # print(int(i)*2)
+            print(summ)
                 # break
-            # param2=number[::-2]
-            # for i in param1:
-            #     summ=summ+int(i)
+            param2=number[::-2]
+            for i in param2:
+                summ=summ+int(i)
 
             print(summ)
         else:
