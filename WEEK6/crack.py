@@ -3,6 +3,7 @@ from sys import argv
 
 if len(argv) == 2:
     laterS = 'abcdefghijklmnopqrstuvwxyz'
+    laterL = 'abcdefghijklmnopqrstuvwxyz'
 
     hashtext=argv[1]
     print(hashtext)
