@@ -6,8 +6,10 @@ while True:
         if (12 < len(number) < 17) :
             param1=number[-2::-2]
             for i in param1:
+                i=i*2
                 print("Ваше число:", i)
-                break
+                # break
+            print(param1)
         else:
             print("Число не знаходиться у діапазоні від 13 до 16 включно.")
     except ValueError:
