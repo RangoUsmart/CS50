@@ -6,6 +6,7 @@ while True:
         if (12 < len(number) < 17) :
             summ=0
             param1=number[-2::-2]
+            print(param1)
             for i in param1:
                 print(i)
                 dub=int(i)*2
@@ -16,6 +17,7 @@ while True:
                         summ=summ+digit*2
                         # print(f"{digit} --")
                         dub //= 10
+                    continue
                 else:
                     summ=summ+dub
 
