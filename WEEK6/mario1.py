@@ -9,6 +9,7 @@ while True:
                 form=(int(number)-i)
                 row=(" "*form)+("#"*i)
                 print(row)
-        else:
             break
+        else:
+             number
 
