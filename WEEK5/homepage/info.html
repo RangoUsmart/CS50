@@ -46,111 +46,82 @@
 
     <div class="container mt-4">
         <div class="container">
-            <table class="table table-bordered">
-                <thead>
-                  <tr>
-                    <th>Категорія</th>
-                    <th>Команда</th>
-                    <th>Опис</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td rowspan="2">Управління файлами та каталогами</td>
-                    <td>`cd`</td>
-                    <td>Перейти в каталог</td>
-                  </tr>
-                  <tr>
-                    <td>`ls`</td>
-                    <td>Перелік файлів та каталогів</td>
-                  </tr>
-                  <tr>
-                    <td rowspan="3">Робота з текстом</td>
-                    <td>`echo`</td>
-                    <td>Вивести текст</td>
-                  </tr>
-                  <tr>
-                    <td>`printf`</td>
-                    <td>Вивести форматований текст</td>
-                  </tr>
-                  <tr>
-                    <td>`scanf`</td>
-                    <td>Ввести текст з клавіатури</td>
-                  </tr>
-                  <tr>
-                    <td rowspan="3">Робота з числами</td>
-                    <td>`abs`</td>
-                    <td>Обчислити абсолютне значення числа</td>
-                  </tr>
-                  <tr>
-                    <td>`pow`</td>
-                    <td>Обчислити степінь числа</td>
-                  </tr>
-                  <tr>
-                    <td>`sqrt`</td>
-                    <td>Обчислити квадратний корінь числа</td>
-                  </tr>
-                  <tr>
-                    <td rowspan="3">Робота з мережею</td>
-                    <td>`ping`</td>
-                    <td>Перевірити зв'язок із сервером</td>
-                  </tr>
-                  <tr>
-                    <td>`telnet`</td>
-                    <td>Підключитися до сервера</td>
-                  </tr>
-                  <tr>
-                    <td>`ftp`</td>
-                    <td>Завантажити або завантажити файл з сервера</td>
-                  </tr>
-                  <tr>
-                    <td rowspan="2">Робота з пам'яттю</td>
-                    <td>`malloc`</td>
-                    <td>Виділити пам'ять</td>
-                  </tr>
-                  <tr>
-                    <td>`free`</td>
-                    <td>Звільнити пам'ять</td>
-                  </tr>
-                  <tr>
-                    <td rowspan="2">Робота з часом</td>
-                    <td>`time`</td>
-                    <td>Виміряти час виконання програми</td>
-                  </tr>
-                  <tr>
-                    <td>`sleep`</td>
-                    <td>Затримати виконання програми</td>
-                  </tr>
-                  <tr>
-                    <td rowspan="2">Робота з випадковими числами</td>
-                    <td>`rand`</td>
-                    <td>Вивести випадкове число</td>
-                  </tr>
-                  <tr>
-                    <td>`srand`</td>
-                    <td>Ініціалізувати генератор випадкових чисел</td>
-                  </tr>
-                  <tr>
-                    <td rowspan="2">Робота з файлами даних</td>
-                    <td>`fopen`</td>
-                    <td>Відкрити файл</td>
-                  </tr>
-                  <tr>
-                    <td>`fclose`</td>
-                    <td>Закрити файл</td>
-                  </tr>
-                  <tr>
-                    <td rowspan="2">Інші команди</td>
-                    <td>`sqlite3`</td>
-                    <td>Інтерфейс для роботи з базами даних SQLite</td>
-                  </tr>
-                  <tr>
-                    <td>`dot`</td>
-                    <td>Програма для створення графічних зображень графів</td>
-                  </tr>
-                </tbody>
-              </table>
-
+            <table class="table table-responsive table-bordered table-dark">
+              <thead>
+                <tr>
+                  <th colspan="3" class="text-center">Команди C, які використовуються в курсі CS50</th>
+                </tr>
+                <tr>
+                  <th class="text-center">Категорія</th>
+                  <th class="text-center">Команда</th>
+                  <th class="text-center">Опис</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="text-center">Управління файлами та каталогами</td>
+                  <td class="text-center">`cd`</td>
+                  <td class="text-center">Перейти в каталог</td>
+                </tr>
+                <tr>
+                  <td class="text-center">`ls`</td>
+                  <td class="text-center">Перелік файлів та каталогів</td>
+                </tr>
+                <tr>
+                  <td rowspan="3" class="text-center">Робота з текстом</td>
+                  <td class="text-center">`echo`</td>
+                  <td class="text-center">Вивести текст</td>
+                </tr>
+                <tr>
+                  <td class="text-center">`printf`</td>
+                  <td class="text-center">Вивести форматований текст</td>
+                </tr>
+                <tr>
+                  <td class="text-center">`scanf`</td>
+                  <td class="text-center">Ввести текст з клавіатури</td>
+                </tr>
+                <tr>
+                  <td rowspan="3" class="text-center">Робота з числами</td>
+                  <td class="text-center">`abs`</td>
+                  <td class="text-center">Обчислити абсолютне значення числа</td>
+                </tr>
+                <tr>
+                  <td class="text-center">`pow`</td>
+                  <td class="text-center">Обчислити степінь числа</td>
+                </tr>
+                <tr>
+                  <td class="text-center">`sqrt`</td>
+                  <td class="text-center">Обчислити квадратний корінь числа</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="text-center">Робота з мережею</td>
+                  <td class="text-center">`ping`</td>
+                  <td class="text-center">Перевірити зв'язок із сервером</td>
+                </tr>
+                <tr>
+                  <td class="text-center">`telnet`</td>
+                  <td class="text-center">Підключитися до сервера</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="text-center">Робота з пам'яттю</td>
+                  <td class="text-center">`malloc`</td>
+                  <td class="text-center">Виділити пам'ять</td>
+                </tr>
+                <tr>
+                  <td class="text-center">`free`</td>
+                  <td class="text-center">Звільнити пам'ять</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="text-center">Робота з часом</td>
+                  <td class="text-center">`time`</td>
+                  <td class="text-center">Виміряти час виконання програми</td>
+                </tr>
+                <tr>
+                  <td class="text-center">`sleep`</td>
+                  <td class="text-center">Затримати виконання програми</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
     </div>
 
