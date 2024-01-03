@@ -14,12 +14,14 @@ while True:
                 if dub>9:
                     txt=str(dub)
                     summ=summ+int(txt[0])*2+int(txt[1])*2
+                    # print(dub)
                 else:
                     summ=summ+dub
+                    # print(dub)
                 print("____")
                 # break
-                print(i)
-            print(summ)
+                # print(i)
+                print(summ)
             param2=number[::-2]
             for i in param2:
                 summ=summ+int(i)
