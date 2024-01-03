@@ -19,8 +19,8 @@ while True:
             for i in param2:
                 summ=summ+int(i)
             # print(summ)
-            if summ%20==0:
-                print(number[:1])
+            if summ%10==0:
+                # print(number[:1])
                 combinedNumber = int(number[:2])
                 if(combinedNumber==34 or combinedNumber==35 or combinedNumber==37):
 
@@ -41,5 +41,6 @@ while True:
 
         else:
             print("INVALID")
+            break
     except ValueError:
         print("Ви ввели не ціле число. Спробуйте ще раз.")
