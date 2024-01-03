@@ -4,12 +4,12 @@ while True:
     try:
         number = input("Введіть ціле число: ")
         if (12 < len(number) < 17) :
+            summ=0
             param1=number[-2::-2]
             for i in param1:
-                i=i*2
-                print("Ваше число:", i)
+                summ=summ+int(i)*2
                 # break
-            print(param1)
+            print(summ)
         else:
             print("Число не знаходиться у діапазоні від 13 до 16 включно.")
     except ValueError:
