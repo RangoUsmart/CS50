@@ -1,10 +1,12 @@
 from cs50 import get_int
+
 while True:
+    number = get_int("Введіть ціле число: ")
     try:
-        number = get_int("Введіть ціле число: ")
-        print("Ваше число:", number)
-        break  # Якщо користувач ввів число, вийти з циклу
+        if (12<number<17):
+            print("Ваше число:", number)
+            break  # Якщо користувач ввів число, вийти з циклу
     except ValueError:
-        print("Це не число. Спробуйте ще раз.")
+        number
 
 print("Введене число:", number)
