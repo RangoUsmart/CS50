@@ -12,12 +12,8 @@ while True:
                 dub=int(i)*2
                 print(dub)
                 if dub>9:
-                    str(dub)
-                    dub[0]
-                        summ=summ+digit*2
-                        # print(f"{digit} --")
-                        dub //= 10
-                    continue
+                    txt=str(dub)
+                    summ=summ+int(txt[0])*2+int(txt[1])*2
                 else:
                     summ=summ+dub
             print(summ)
