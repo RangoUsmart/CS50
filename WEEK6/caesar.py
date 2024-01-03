@@ -7,7 +7,7 @@ def getString():
 def change(txt,arg1): #, par
     diferent=[]
     for char in txt:
-        newchar=ord(char)+int(arg1)
+        newchar=ord(char)+int(arg1)%26
         if (ord("a")<=ord(char)<=ord("z")):
             if(newchar>ord("z")):
                 newchar=newchar-ord("z")+ord("a")-1
@@ -23,7 +23,8 @@ def change(txt,arg1): #, par
         else:
              diferent.append(ord(char))
     text = ''.join(chr(code) for code in diferent)
-    return text
+    text = text + "\n"
+    return text + "\n"
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
