@@ -1,14 +1,10 @@
+# import two functions
+from cs50 import get_float
 
-while True:
+# prompt user for an ampunt of change and check its validity
+while True :
     cash=[25, 10, 5, 1]
-    number = get_float("Введіть число: ")
-    try:
-        fnum = float(number)  # Спроба перетворити введене значення у float
-        inum = int(number)  # Спроба перетворити введене значення у float
-        res=fnum-inum
-        print("Введено число з плаваючою точкою:", res)
-        break  # Вихід з циклу після успішного введення числа
-    except ValueError:
-        number
-
+    change = get_float("change owed :")
+    if change > 0 :
+        break
 
