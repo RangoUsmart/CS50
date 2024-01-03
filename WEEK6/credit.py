@@ -8,9 +8,10 @@ while True:
             param1=number[-2::-2]
             for i in param1:
                 dub=int(i)*2
-                    if dub>9
+                if dub>9
                     
-                summ=summ+
+
+                summ=summ+dub
                 print(int(i)*2)
                 # break
             param2=number[::-2]
