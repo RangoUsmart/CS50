@@ -9,8 +9,8 @@ def change(txt,arg1): #, par
     for char in txt:
         newchar=ord(char)+int(arg1)
         if(newchar>ord("z"))
-            ord(char)
-        diferent.append(ord(char)+int(arg1))
+            newchar=newchar
+        diferent.append(newchar)
     text = ''.join(chr(code) for code in diferent)
     return text
 
