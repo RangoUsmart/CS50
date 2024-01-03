@@ -8,7 +8,9 @@ while True:
             for i in range(1, int(number)+1):
                 form=(int(number)-i)
                 row=(" "*form)+("#"*i)
-                print(row)
+                midd=(" "*2)
+                row2=("#"*i)
+                print(row+midd+row2)
             break
         else:
              number
