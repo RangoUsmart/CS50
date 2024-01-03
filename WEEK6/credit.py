@@ -8,6 +8,7 @@ while True:
             param1=number[-2::-2]
             for i in param1:
                 summ=summ+int(i)*2
+                print(i*2)
                 # break
             print(summ)
         else:
