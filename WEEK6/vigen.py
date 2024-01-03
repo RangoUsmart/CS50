@@ -5,13 +5,13 @@ def getString():
     intext=input("Введіть текст: ")
     return intext
 
-def revad(a, sym):
-    newsym=""
+# def revad(a, sym):
+#     newsym=""
 
-    return newsym
+#     return newsym
 
 def change(txt,arg1): #, par
-
+    keymap= [ord(char) for char in arg1]
     diferent=[]
     for char in txt:
         newchar=ord(char)+int(arg1)%26
