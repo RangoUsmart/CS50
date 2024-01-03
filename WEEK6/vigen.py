@@ -6,8 +6,10 @@ def getString():
     return intext
 
 def revad(a, sym):
+    newsym=""
 
-    return newsy
+    return newsym
+
 def change(txt,arg1): #, par
 
     diferent=[]
