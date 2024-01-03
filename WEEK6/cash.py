@@ -1,3 +1,4 @@
+
 while True:
     cash=[25, 10, 5, 1]
     number = get_float("Введіть число: ")
