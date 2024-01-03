@@ -9,7 +9,7 @@ def change(txt,arg1): #, par
     for char in txt:
         newchar=ord(char)+int(arg1)
         if(newchar>ord("z"))
-            
+            ord(char)
         diferent.append(ord(char)+int(arg1))
     text = ''.join(chr(code) for code in diferent)
     return text
