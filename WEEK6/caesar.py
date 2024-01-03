@@ -2,12 +2,15 @@
 import sys
 
 def getString():
-    inputtext=input("Введіть текст: ")
-    return inputtext
-def change(txt, par)
+    intext=input("Введіть текст: ")
+    return intext
+def change(txt): #, par
+    ascii_list = [ord(char) for char in txt]
+
+    print("ASCII-коди символів:", ascii_list)
 
 if __name__ == "__main__":
     text=getString()
-    arguments = sys.argv
-    res=change(text, arguments[1])
-    print(res)
+    # arguments = sys.argv
+    res=change(text) 
+    # print(res)
