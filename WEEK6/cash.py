@@ -3,7 +3,6 @@ while True:
     if not number.isdigit():
             number
     else:
-
         if 0<int(number)<9:
             for i in range(1, int(number)+1):
                 form=(int(number)-i)
