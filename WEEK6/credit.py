@@ -20,7 +20,22 @@ while True:
                 summ=summ+int(i)
 
             if summ%20:
-                
+                if(combinedNumber==34 or combinedNumber==35 or combinedNumber==37):
+
+                    printf("AMEX\n")
+                elif(result[count-1]==4):
+                    printf("VISA\n")
+                elif(combinedNumber==54 or combinedNumber==55 or combinedNumber==51):
+                    printf("MASTERCARD\n")
+                else:
+                {
+                    printf("INVALID\n");
+                }
+            }
+            else
+                {
+                    printf("INVALID\n");
+                }
 
         else:
             print("Число не знаходиться у діапазоні від 13 до 16 включно.")
