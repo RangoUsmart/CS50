@@ -14,7 +14,8 @@ def change(txt,arg1): #, par
             elif(newchar>ord("Z")):
                 newchar=newchar-ord("z")+ord("a")-1
             diferent.append(newchar)
-
+        else:
+            diferent.append(ord(char))
     text = ''.join(chr(code) for code in diferent)
     return text
 
