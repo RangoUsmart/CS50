@@ -4,8 +4,8 @@ while True:
     try:
         fnum = float(number)  # Спроба перетворити введене значення у float
         inum = int(number)  # Спроба перетворити введене значення у float
-        res=
-        print("Введено число з плаваючою точкою:", number)
+        res=fnum-inum
+        print("Введено число з плаваючою точкою:", res)
         break  # Вихід з циклу після успішного введення числа
     except ValueError:
         number
