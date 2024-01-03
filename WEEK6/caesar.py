@@ -6,7 +6,7 @@ def getString():
     return intext
 def change(txt): #, par
     ascii_list = [ord(char) for char in txt]
-
+    for ckar in (ord("a"), ord("z"))
     print("ASCII-коди символів:", ascii_list)
 
 if __name__ == "__main__":
