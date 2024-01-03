@@ -1,6 +1,6 @@
 while True:
     cash=[25, 10, 5, 1]
-    number = input("Введіть число: ")
+    number = get_float("Введіть число: ")
     try:
         fnum = float(number)  # Спроба перетворити введене значення у float
         inum = int(number)  # Спроба перетворити введене значення у float
