@@ -29,5 +29,7 @@ def change(txt,arg1): #, par
 if __name__ == "__main__":
     text=getString()
     arguments = sys.argv
+    if 0<len(arguments) > 1:
+        print("Usage: python caesar.py k")
     res=change(text, arguments[1]) #, arguments[1]
     print(res)
