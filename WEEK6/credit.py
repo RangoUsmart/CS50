@@ -3,7 +3,7 @@ from cs50 import get_int
 while True:
     try:
         number = input("Введіть ціле число: ")
-        numstr=str(number)
+        numint=int(number)
         if 12 < len(number) < 17:
             print("Ваше число:", number)
             break
