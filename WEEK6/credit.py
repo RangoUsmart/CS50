@@ -4,7 +4,7 @@ while True:
     try:
         number = input("Введіть ціле число: ")
         numint=int(number)
-        if 12 < len(number) < 17:
+        if (12 < len(number) < 17) :
             print("Ваше число:", number)
             break
         else:
