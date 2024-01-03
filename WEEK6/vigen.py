@@ -12,11 +12,11 @@ def getString():
 
 def change(txt,arg1): #, par
     keymap = [ord(char) for char in arg1]
-    print(keymap)
+    # print(keymap)
     diferent=[]
     for index, char in enumerate(txt):
-        print(keymap[index%len(keymap)])
-        newchar=ord(char)+int(keymap[index%len(keymap)])%ord("a")+1
+        # print(keymap[index%len(keymap)])
+        newchar=ord(char)+int(keymap[index%len(keymap)])%ord("a")
         if (ord("a")<=ord(char)<=ord("z")):
             if(newchar>ord("z")):
                 newchar=newchar-ord("z")+ord("a")-1
