@@ -9,16 +9,17 @@ while True:
             for i in param1:
                 dub=int(i)*2
                 if dub>9:
-                    while number > 0:
+                    while dub > 0:
                         digit = dub % 10
-                        digits.append(digit)
+                        summ=summ+digit*2
                         dub //= 10
-                summ=summ+dub
-                print(int(i)*2)
+                else:
+                    summ=summ+dub
+                # print(int(i)*2)
                 # break
-            param2=number[::-2]
-            for i in param1:
-                summ=summ+int(i)
+            # param2=number[::-2]
+            # for i in param1:
+            #     summ=summ+int(i)
 
             print(summ)
         else:
