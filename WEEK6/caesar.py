@@ -4,10 +4,10 @@ import sys
 def getString():
     intext=input("Введіть текст: ")
     return intext
-def change(txt): #, par
-    diferent=str
+def change(txt,arg1): #, par
+    diferent=[]
     for char in txt
-        ord("char")
+        diferent.aord("char")+int(arg1)
     for ckar in (ord("a"), ord("z"))
     print("ASCII-коди символів:", ascii_list)
 
