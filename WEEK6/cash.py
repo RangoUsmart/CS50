@@ -11,8 +11,8 @@ while True :
 
     for i in cash:
         print(i)
-        while change%i==0:
-            print(i)
+        while change//i==1:
+            # print(i)
             count=count+1
             change = change-i
         print(count)
