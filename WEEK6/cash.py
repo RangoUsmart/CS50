@@ -7,7 +7,7 @@ while True:
     change = get_float("Change owed: ")
 
     if change < 0:
-        break
+        change
 
     cents = round(change * 100)
 
