@@ -24,7 +24,7 @@ def change(txt,arg1): #, par
              diferent.append(ord(char))
     text = ''.join(chr(code) for code in diferent)
     text = text + "\n"
-    return text + "\n"
+    return text
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
