@@ -4,9 +4,9 @@ while True:
     try:
         number = input("Введіть ціле число: ")
         if (12 < len(number) < 17) :
-            param1=my_list[-2::-2]
-            # for i in number:
-            #     print("Ваше число:", number)
+            param1=number[-2::-2]
+            for i in param1:
+                print("Ваше число:", i)
                 break
         else:
             print("Число не знаходиться у діапазоні від 13 до 16 включно.")
