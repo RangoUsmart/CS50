@@ -1,16 +1,11 @@
 while True:
+    cash=[25, 10, 5, 1]
     number = input("Введіть число: ")
-    if not number.isdigit():
-            number
-    else:
-        if 0<int(number)<9:
-            for i in range(1, int(number)+1):
-                form=(int(number)-i)
-                row=(" "*form)+("#"*i)
-                midd=(" "*2)
-                row2=("#"*i)
-                print(row+midd+row2)
-            break
-        else:
-             number
+    try:
+        number = float(number)  # Спроба перетворити введене значення у float
+        print("Введено число з плаваючою точкою:", number)
+        break  # Вихід з циклу після успішного введення числа
+    except ValueError:
+        number
+
 
