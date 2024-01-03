@@ -20,6 +20,7 @@ while True:
                 summ=summ+int(i)
             # print(summ)
             if summ%20==0:
+                print(number[:1])
                 combinedNumber = int(number[:2])
                 if(combinedNumber==34 or combinedNumber==35 or combinedNumber==37):
 
@@ -33,9 +34,10 @@ while True:
                     break
                 else:
                     print("INVALID")
+                    break
             else:
                 print("INVALID")
-                
+
 
         else:
             print("INVALID")
