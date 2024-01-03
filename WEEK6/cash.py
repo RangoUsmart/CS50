@@ -8,3 +8,6 @@ while True :
     if change > 0 :
         break
 
+change=round(change*100)
+
+
