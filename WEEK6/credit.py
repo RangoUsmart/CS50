@@ -6,7 +6,7 @@ while True:
         if (12 < len(number) < 17) :
             summ=0
             param1=number[-2::-2]
-            print(param1)
+            # print(param1)
             for i in param1:
                 dub=int(i)*2
                 if dub>9:
@@ -18,7 +18,7 @@ while True:
             param2=number[::-2]
             for i in param2:
                 summ=summ+int(i)
-            print(summ)
+            # print(summ)
             if summ%20==0:
                 combinedNumber = int(number[:2])
                 if(combinedNumber==34 or combinedNumber==35 or combinedNumber==37):
@@ -26,10 +26,11 @@ while True:
                     print("AMEX\n")
                 elif(int(number[:1])==4):
                     print("VISA\n")
+                    breik
                 elif(combinedNumber==54 or combinedNumber==55 or combinedNumber==51):
                     print("MASTERCARD\n")
                 else:
-                    print("INVALID\n")
+                    print("INVALID")
             else:
                 print("INVALID")
 
