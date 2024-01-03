@@ -3,10 +3,10 @@ from cs50 import get_int
 while True:
     try:
         number = input("Введіть ціле число: ")
-        numint=int(number)
         if (12 < len(number) < 17) :
-            print("Ваше число:", number)
-            break
+            for i in number:
+                print("Ваше число:", number)
+                break
         else:
             print("Число не знаходиться у діапазоні від 13 до 16 включно.")
     except ValueError:
