@@ -2,8 +2,9 @@
 from cs50 import get_float
 
 # prompt user for an ampunt of change and check its validity
+cash=[25, 10, 5, 1]
 while True :
-    cash=[25, 10, 5, 1]
+
     change = get_float("change owed :")
     if change > 0 :
         break
@@ -11,3 +12,5 @@ while True :
 change=round(change*100)
 
 
+for i in cash):
+    print(i)
