@@ -3,8 +3,10 @@ import sys
 
 def getString():
     inputtext=
-
+    return inputtext
+def change(txt, par)
 if __name__ == "__main__":
+    text=getString()
     arguments = sys.argv
-    res=change(arguments[1])
+    res=change(text,arguments[1])
     print(res)
