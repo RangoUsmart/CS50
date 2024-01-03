@@ -23,13 +23,13 @@ while True:
                 combinedNumber = int(number[:2])
                 if(combinedNumber==34 or combinedNumber==35 or combinedNumber==37):
 
-                    print("AMEX")
+                    print("AMEX\n")
                 elif(int(number[:1])==4):
-                    print("VISA")
+                    print("VISA\n")
                 elif(combinedNumber==54 or combinedNumber==55 or combinedNumber==51):
-                    print("MASTERCARD")
+                    print("MASTERCARD\n")
                 else:
-                    print("INVALID")
+                    print("INVALID\n")
             else:
                 print("INVALID")
 
