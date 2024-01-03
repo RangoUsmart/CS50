@@ -5,10 +5,13 @@ def getString():
     intext=input("Введіть текст: ")
     return intext
 def change(txt): #, par
-    ascii_list = [ord(char) for char in txt]
+    diferent=str
+    for char in txt
+        ord("char")
     for ckar in (ord("a"), ord("z"))
     print("ASCII-коди символів:", ascii_list)
-def output()
+
+
 if __name__ == "__main__":
     text=getString()
     # arguments = sys.argv
