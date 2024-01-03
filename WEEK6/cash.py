@@ -1,5 +1,5 @@
 while True:
-    number = input("Введіть ціле число: ")
+    number = input("Введіть число: ")
     if not number.isdigit():
             number
     else:
