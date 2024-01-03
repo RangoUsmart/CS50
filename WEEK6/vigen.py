@@ -13,7 +13,7 @@ def getString():
 def change(txt,arg1): #, par
     keymap= [ord(char) for char in arg1]
     diferent=[]
-    for char in txt:
+    for index, char in txt:
         newchar=ord(char)+int(arg1)%26
         if (ord("a")<=ord(char)<=ord("z")):
             if(newchar>ord("z")):
