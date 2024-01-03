@@ -12,14 +12,14 @@ while True:
                 if dub>9:
                     txt=str(dub)
                     summ=summ+int(txt[0])+int(txt[1])
-                    print(summ)
+                    # print(summ)
                 else:
                     summ=summ+dub
             param2=number[::-2]
             for i in param2:
                 summ=summ+int(i)
             print(summ)
-            if summ%20:
+            if summ%20==0:
                 combinedNumber = int(number[:2])
                 if(combinedNumber==34 or combinedNumber==35 or combinedNumber==37):
 
@@ -29,11 +29,11 @@ while True:
                 elif(combinedNumber==54 or combinedNumber==55 or combinedNumber==51):
                     print("MASTERCARD")
                 else:
-                    print("INVALIDa")
+                    print("INVALID")
             else:
-                 print("INVALID")
+                print("INVALID")
 
         else:
-            print("Число не знаходиться у діапазоні від 13 до 16 включно.")
+            print("INVALID")
     except ValueError:
         print("Ви ввели не ціле число. Спробуйте ще раз.")
