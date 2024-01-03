@@ -12,15 +12,14 @@ while True:
                 dub=int(i)*2
                 print(dub)
                 if dub>9:
-                    while dub > 0:
-                        digit = dub % 10
+                    str(dub)
+                    dub[0]
                         summ=summ+digit*2
                         # print(f"{digit} --")
                         dub //= 10
                     continue
                 else:
                     summ=summ+dub
-
             print(summ)
                 # break
             param2=number[::-2]
