@@ -10,7 +10,7 @@ while True :
     change=round(change*100)
 
     for i in cash:
-        print(i)
+        # print(i)
         while change//i==1:
             # print(i)
             count=count+1
