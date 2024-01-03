@@ -7,10 +7,16 @@ while True:
             summ=0
             param1=number[-2::-2]
             for i in param1:
-                summ=summ+int(i)*2
+                dub=int(i)*2
+                    if dub>9
+                    
+                summ=summ+
                 print(int(i)*2)
                 # break
-            my_list[::-2]
+            param2=number[::-2]
+            for i in param1:
+                summ=summ+int(i)
+
             print(summ)
         else:
             print("Число не знаходиться у діапазоні від 13 до 16 включно.")
