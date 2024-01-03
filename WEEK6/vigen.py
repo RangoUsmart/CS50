@@ -15,8 +15,8 @@ def change(txt,arg1): #, par
     # print(keymap)
     diferent=[]
     for index, char in enumerate(txt):
-        # print(keymap[index%len(keymap)])
-        newchar=ord(char)+int(keymap[index%len(keymap)])%ord("a")
+        print(int(keymap[index%len(keymap)])%26)
+        newchar=ord(char)+int(keymap[index%len(keymap)])%26
         if (ord("a")<=ord(char)<=ord("z")):
             if(newchar>ord("z")):
                 newchar=newchar-ord("z")+ord("a")-1
