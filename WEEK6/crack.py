@@ -8,18 +8,18 @@ def find_word(letters, length, target_word, key):
             new_word = word + letter
             if crypt(new_word, key) == target_word:
             # if new_word == target_word:
-                print new_word
+                print (new_word)
     return None
 
 if len(argv) == 2:
     laterS = 'abcdefghijklmnopqrstuvwxyz'
     laterL = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-    diction=
+    diction=laterS+laterL
     hashtext=argv[1]
-    print(hashtext)
+    # print(hashtext)
     salt = hashtext[:2]
-    for i in range(1,5)
-        tri1=find_word(dict, i, hashtext, salt)
+    for i in range(1,5):
+        tri1=find_word(diction, i, hashtext, salt)
 else:
     print("USage: python crack.py hash")
     exit(1)
