@@ -25,11 +25,11 @@ def change(txt,arg1): #, par
     text = ''.join(chr(code) for code in diferent)
     return text
 
-
 if __name__ == "__main__":
-    text=getString()
-    arguments = sys.argv
-    if 0<len(arguments) > 1:
+    if len(sys.argv) != 2:
         print("Usage: python caesar.py k")
-    res=change(text, arguments[1]) #, arguments[1]
+        sys.exit(1)  # Завершення програми з кодом виходу 1
+
+    text = getString()
+    res = change(text, sys.argv[1])
     print(res)
