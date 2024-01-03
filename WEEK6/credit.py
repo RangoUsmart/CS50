@@ -8,16 +8,17 @@ while True:
             param1=number[-2::-2]
             print(param1)
             for i in param1:
-                print(i)
+                # print(i)
                 dub=int(i)*2
-                print(dub)
+                # print(dub)
                 if dub>9:
                     txt=str(dub)
                     summ=summ+int(txt[0])*2+int(txt[1])*2
                 else:
                     summ=summ+dub
-            print(summ)
+                print("____")
                 # break
+                print(i)
             param2=number[::-2]
             for i in param2:
                 summ=summ+int(i)
