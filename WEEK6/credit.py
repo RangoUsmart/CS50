@@ -1,3 +1,5 @@
+from cs50 import get_int
+
 while True:
     number = input("Введіть ціле число: ")
     if not number.isdigit():
@@ -5,9 +7,7 @@ while True:
     else:
         if 13<int(number)<17:
             for i in number:
-                form=(int(number)-i)
-                row=(" "*form)+("#"*i)
-                print(row)
+                print(number)
             break
         else:
              number
