@@ -18,20 +18,20 @@ while True:
             param2=number[::-2]
             for i in param2:
                 summ=summ+int(i)
-
+            print(summ)
             if summ%20:
                 combinedNumber = int(number[:2])
                 if(combinedNumber==34 or combinedNumber==35 or combinedNumber==37):
 
                     print("AMEX")
-                elif(result[count-1]==4):
+                elif(int(number[:1])==4):
                     print("VISA")
                 elif(combinedNumber==54 or combinedNumber==55 or combinedNumber==51):
                     print("MASTERCARD")
                 else:
-                    print("INVALID")
+                    print("INVALIDa")
             else:
-                    print("INVALID")
+                 print("INVALID")
 
         else:
             print("Число не знаходиться у діапазоні від 13 до 16 включно.")
