@@ -1,6 +1,5 @@
-import nltk
-nltk.download('punkt')  # Завантаження токенізаторів NLTK
 from nltk.tokenize import sent_tokenize
+
 
 def lines(a, b):
     """Return lines in both a and b"""
