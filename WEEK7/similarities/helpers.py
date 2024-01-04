@@ -22,7 +22,7 @@ def lines(a, b):
 def sentences(a, b):
 
     """Return sentences in both a and b"""
-
+    sentences = sent_tokenize(text, language='russian')
     # TODO
     return []
 
