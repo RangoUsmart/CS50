@@ -17,7 +17,7 @@ def lines(a, b):
     for i in len_small:
         if i in len_large:
             list.append(i)
-        
+    list=list(set(list))
     return list
 
 
