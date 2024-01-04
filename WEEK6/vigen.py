@@ -26,7 +26,7 @@ def change(txt,arg1): #, par
         if (ord("a")<=ord(char)<=ord("z")):
 
             newchar=ord(char)+int(keymap[(index-kety)%len(keymap)])%ord("a")
-            print(kety)
+            # print(kety)
             if(newchar>ord("z")):
                 newchar=newchar-ord("z")+ord("a")-1
                 diferent.append(newchar)
