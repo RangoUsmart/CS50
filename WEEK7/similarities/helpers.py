@@ -1,8 +1,9 @@
 def lines(a, b):
     """Return lines in both a and b"""
+    list =[]
     a_split = a.split("\n")
     b_split = b.split("\n")
-    
+
     # TODO
     return []
 
