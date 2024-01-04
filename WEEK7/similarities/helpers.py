@@ -38,5 +38,9 @@ def sentences(a, b):
 def substrings(a, b, n):
     """Return substrings of length n in both a and b"""
 
-    # TODO
-    return []
+    substrings_a = {a[i:i+n] for i in range(len(a) - n + 1)}
+    substrings_b = {b[i:i+n] for i in range(len(b) - n + 1)}
+
+    unique_substrings = list(substrings_a.intersection(substrings_b)) 
+
+    return unique_substrings
