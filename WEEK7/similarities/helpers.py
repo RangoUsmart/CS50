@@ -16,10 +16,9 @@ def lines(a, b):
 
     for i in len_small:
         if i in len_large:
-            print(f"Рядок '{рядок}' присутній у обох наборах")
-        else:
-            print(f"Рядок '{рядок}' відсутній у другому наборі рядків")
-    return []
+            list.append(i)
+        
+    return list
 
 
 def sentences(a, b):
