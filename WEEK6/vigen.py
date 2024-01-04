@@ -1,10 +1,15 @@
 # from cs50 import get_int
 import sys
 
+def check_for_digits(text):
+    return not any(char.isdigit() for char in text)
+
 def getString():
     intext=input("Введіть текст: ")
-        if
-    return intext
+        if check_for_digits(intext):
+            return intext
+        else:
+            
 
 # def revad(a, sym):
 #     newsym=""
