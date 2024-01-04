@@ -1,5 +1,4 @@
 import nltk
-
 from nltk.tokenize import sent_tokenize
 
 def lines(a, b):
@@ -23,8 +22,8 @@ def sentences(a, b):
     m_list =[]
     new_list=[]
     """Return sentences in both a and b"""
-    a_split = sent_tokenize(text, language='english')
-    b_split = sent_tokenize(text, language='english')
+    a_split = sent_tokenize(a, language='english')
+    b_split = sent_tokenize(b, language='english')
     for i in min(a_split, b_split, key=len):
         if i in max(a_split, b_split, key=len):
             m_list.insert(len(m_list), i)
