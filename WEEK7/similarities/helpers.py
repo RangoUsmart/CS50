@@ -8,10 +8,11 @@ def lines(a, b):
     for i in min(a_split, b_split, key=len):
         if i in max(a_split, b_split, key=len):
             m_list.append(i)
+            
     for element in m_list:
         if element not in new_list:
             new_list.append(element)
-    return m_list
+    return new_list
 
 
 def sentences(a, b):
