@@ -3,12 +3,13 @@ def lines(a, b):
     m_list =[]
     new_list=[]
     a_split = a.split("\n")
+    print(a_split)
     b_split = b.split("\n")
-
+    print(b_split)
     for i in min(a_split, b_split, key=len):
         if i in max(a_split, b_split, key=len):
             m_list.append(i)
-            
+
     for element in m_list:
         if element not in new_list:
             new_list.append(element)
