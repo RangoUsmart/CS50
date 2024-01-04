@@ -3,7 +3,10 @@ def lines(a, b):
     list =[]
     a_split = a.split("\n")
     b_split = b.split("\n")
-    
+    a_split_len=len(a_split)
+    b_split_len=len(b_split)
+    if (a_split_len>b_split_len):
+        
     # TODO
     return []
 
