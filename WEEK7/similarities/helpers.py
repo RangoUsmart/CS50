@@ -1,3 +1,7 @@
+import nltk
+nltk.download('punkt')  # Завантаження токенізаторів NLTK
+from nltk.tokenize import sent_tokenize
+
 def lines(a, b):
     """Return lines in both a and b"""
     m_list =[]
@@ -16,6 +20,7 @@ def lines(a, b):
 
 
 def sentences(a, b):
+
     """Return sentences in both a and b"""
 
     # TODO
