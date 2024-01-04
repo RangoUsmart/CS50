@@ -3,7 +3,7 @@ import sys
 
 def getString():
     intext=input("Введіть текст: ")
-    
+        if
     return intext
 
 # def revad(a, sym):
