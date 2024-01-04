@@ -14,11 +14,12 @@ def change(txt,arg1): #, par
     keymap = [ord(char) for char in arg1]
     # print(keymap)
     diferent=[]
+    kety=0
     for index, char in enumerate(txt):
         # print(int(keymap[index%len(keymap)])%26)
 
         if (ord("a")<=ord(char)<=ord("z")):
-            newchar=ord(char)+int(keymap[index%len(keymap)])%ord("a")
+            newchar=ord(char)+int(keymap[(index-kety)%len(keymap)])%ord("a")
             if(newchar>ord("z")):
                 newchar=newchar-ord("z")+ord("a")-1
                 diferent.append(newchar)
@@ -33,6 +34,7 @@ def change(txt,arg1): #, par
                 diferent.append(newchar)
         else:
              diferent.append(ord(char))
+             kety+=1
     text = ''.join(chr(code) for code in diferent)
     text = "ciphertext: "+text
     return text
