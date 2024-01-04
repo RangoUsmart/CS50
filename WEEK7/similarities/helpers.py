@@ -1,6 +1,6 @@
 def lines(a, b):
     """Return lines in both a and b"""
-    list =[]
+    m_list =[]
     len_large=[]
     len_small=[]
     a_split = a.split("\n")
