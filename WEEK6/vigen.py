@@ -3,6 +3,7 @@ import sys
 
 def getString():
     intext=input("Введіть текст: ")
+    
     return intext
 
 # def revad(a, sym):
@@ -19,7 +20,9 @@ def change(txt,arg1): #, par
         # print(int(keymap[index%len(keymap)])%26)
 
         if (ord("a")<=ord(char)<=ord("z")):
+
             newchar=ord(char)+int(keymap[(index-kety)%len(keymap)])%ord("a")
+            print(kety)
             if(newchar>ord("z")):
                 newchar=newchar-ord("z")+ord("a")-1
                 diferent.append(newchar)
