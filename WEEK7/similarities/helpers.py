@@ -11,7 +11,7 @@ def lines(a, b):
     for element in m_list:
         if element not in new_list:
             new_list.append(element)
-    return new_list
+    return m_list
 
 
 def sentences(a, b):
