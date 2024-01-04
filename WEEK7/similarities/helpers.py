@@ -22,7 +22,8 @@ def lines(a, b):
 def sentences(a, b):
 
     """Return sentences in both a and b"""
-    sentences = sent_tokenize(text, language='russian')
+    a_split = sent_tokenize(text, language='english')
+    b_split = sent_tokenize(text, language='english')
     # TODO
     return []
 
