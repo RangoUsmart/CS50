@@ -4,6 +4,7 @@ def lines(a, b):
     new_list=[]
     a_split = a.split("\n")
     b_split = b.split("\n")
+    
     for i in min(a_split, b_split, key=len):
         if i in max(a_split, b_split, key=len):
             m_list.insert(len(m_list), i)
