@@ -1,18 +1,21 @@
 def lines(a, b):
     """Return lines in both a and b"""
     list =[]
-    len=[]
+    len_large=[]
+    len_small=[]
     a_split = a.split("\n")
     b_split = b.split("\n")
     a_split_len=len(a_split)
     b_split_len=len(b_split)
     if (a_split_len>=b_split_len):
-        len=a_split
+        len_large=a_split
+        len_small=b_split
     else:
-        len=b_split
+        len_large=b_split
+        len_small=a_split
 
-    for рядок in рядки_1:
-        if рядок in рядки_2:
+    for i in len_small:
+        if i in len_large:
             print(f"Рядок '{рядок}' присутній у обох наборах")
         else:
             print(f"Рядок '{рядок}' відсутній у другому наборі рядків")
